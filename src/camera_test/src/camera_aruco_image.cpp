@@ -63,7 +63,7 @@ private:
 };
 
 void arucoDetect::getImage() {
-    ArucoImage = cv::imread("/home/m/Downloads/2.jpg",cv::IMREAD_REDUCED_COLOR_8);
+    ArucoImage = cv::imread("/home/hwk/camera_aruco_ros/src/camera_test/media/1.jpg",cv::IMREAD_REDUCED_COLOR_8);
 }
 
 
@@ -226,7 +226,7 @@ arucoDetect::startDetect() {
 //
 
             // small aruco--zzw_added
-            cv::aruco::estimatePoseSingleMarkers(corners, 0.25, cameraMatrix, distCoeffs, rvecs,
+            cv::aruco::estimatePoseSingleMarkers(corners, 0.2, cameraMatrix, distCoeffs, rvecs,
                                                  tvecs);
 
             double currentTime = ((double) getTickCount() - tick) / getTickFrequency();

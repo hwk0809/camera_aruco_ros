@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/hwk/camera_aruco_ros/devel/setup.sh

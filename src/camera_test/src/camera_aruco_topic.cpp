@@ -33,6 +33,7 @@ public:
     void imageCallback(const sensor_msgs::ImageConstPtr& msg);
 
     bool display = false;
+    ros::Subscriber sub;
 
 private:
     arucoDetect() = default;
@@ -62,8 +63,6 @@ private:
 
     void loadDict(int index);
 
-    ros::Subscriber sub;
-
 
 };
 
@@ -73,6 +72,8 @@ void arucoDetect::getImage(ros::NodeHandle &nh) {
 
 void arucoDetect::imageCallback(const sensor_msgs::ImageConstPtr& msg) {
     ArucoImage = cv_bridge::toCvShare(msg, "bgr8")->image;
+    cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);
+    cv::waitKey(1); // 一
     flag = 1;
     cout<<flag<<endl;
 }
@@ -83,11 +84,14 @@ arucoDetect *arucoDetect::instance = nullptr;
 int main(int argc, char **argv) {
     ros::init(argc, argv, "aruco_detect");
     ros::NodeHandle nh("aruco_detect");
+    ros::AsyncSpinner spinner(1);
+    spinner.start();
     pub = nh.advertise<camera_test::zzw>("send_data_small", 100);
     pubbig = nh.advertise<camera_test::zzw>("send_data_big", 100);
     arucoDetect *detect = arucoDetect::GetInstance();
 
     detect->getImage(nh);
+
     while (flag == 0)
     {cout<<"wait"<<endl; };
     detect->loadStart(nh);
@@ -133,10 +137,13 @@ arucoDetect::loadDict(int index) {
             dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
             break;
         case 5:
-            dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_5X5_50);
+            dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_5X5_1000);
             break;
         case 6:
             dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_50);
+            break;
+        case 7:
+            dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_7X7_1000);
             break;
         default:
             dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
@@ -191,7 +198,7 @@ arucoDetect::startDetect() {
         cv::aruco::detectMarkers(image, dictionary, corners, ids);
         // if at least one marker detected
         if (!ids.empty()) {
-
+            cout<<"find"<<endl;
             //big aruco--zzw_added
             if(find(ids.begin(), ids.end(), 4)!=ids.end()){
                 cout<<"big aruco detected"<<endl;

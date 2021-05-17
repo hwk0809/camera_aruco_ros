@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hwk/camera_aruco_ros/src/camera_test/src/camera_generate_aruco.cpp
+opencv2/opencv.hpp
+-
+iostream
+-
+opencv2/aruco.hpp
+-
+

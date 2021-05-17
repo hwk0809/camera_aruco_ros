@@ -67,8 +67,8 @@ set(camera_test_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(camera_test_SOURCE_PREFIX /home/m/Downloads/sdx_aruco/camera_test/src/camera_test)
-  set(camera_test_DEVEL_PREFIX /home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel)
+  set(camera_test_SOURCE_PREFIX /home/hwk/camera_aruco_ros/src/camera_test)
+  set(camera_test_DEVEL_PREFIX /home/hwk/camera_aruco_ros/src/cmake-build-debug/devel)
   set(camera_test_INSTALL_PREFIX "")
   set(camera_test_PREFIX ${camera_test_DEVEL_PREFIX})
 else()
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(camera_test_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/include " STREQUAL " ")
+if(NOT "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/include " STREQUAL " ")
   set(camera_test_INCLUDE_DIRS "")
-  set(_include_dirs "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/include")
+  set(_include_dirs "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/incl
         message(FATAL_ERROR "Project 'camera_test' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'camera_test' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/m/Downloads/sdx_aruco/camera_test/src/camera_test/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'camera_test' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hwk/camera_aruco_ros/src/camera_test/${idir}'.  ${_report}")
     endif()
     _list_append_unique(camera_test_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/lib;/home/m/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/lib;/home/hwk/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

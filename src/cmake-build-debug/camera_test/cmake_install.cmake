@@ -1,4 +1,4 @@
-# Install script for directory: /home/m/Downloads/sdx_aruco/camera_test/src/camera_test
+# Install script for directory: /home/hwk/camera_aruco_ros/src/camera_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,59 +37,54 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/msg" TYPE FILE FILES "/home/hwk/camera_aruco_ros/src/camera_test/msg/zzw.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/msg" TYPE FILE FILES "/home/m/Downloads/sdx_aruco/camera_test/src/camera_test/msg/zzw.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/cmake" TYPE FILE FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_test-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/cmake" TYPE FILE FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_test-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/include/camera_test")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/include/camera_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/share/roseus/ros/camera_test")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/share/roseus/ros/camera_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/share/common-lisp/ros/camera_test")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/share/common-lisp/ros/camera_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/share/gennodejs/ros/camera_test")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/share/gennodejs/ros/camera_test")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/lib/python2.7/dist-packages/camera_test")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/lib/python2.7/dist-packages/camera_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/lib/python2.7/dist-packages/camera_test")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/lib/python2.7/dist-packages/camera_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_test.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_test.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/cmake" TYPE FILE FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_test-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/cmake" TYPE FILE FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_test-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test/cmake" TYPE FILE FILES
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_testConfig.cmake"
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_testConfig-version.cmake"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_testConfig.cmake"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/catkin_generated/installspace/camera_testConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test" TYPE FILE FILES "/home/m/Downloads/sdx_aruco/camera_test/src/camera_test/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_test" TYPE FILE FILES "/home/hwk/camera_aruco_ros/src/camera_test/package.xml")
 endif()
 

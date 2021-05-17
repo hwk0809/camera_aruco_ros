@@ -67,8 +67,8 @@ set(camera_test_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(camera_test_SOURCE_PREFIX /home/m/Downloads/sdx_aruco/camera_test/src/camera_test)
-  set(camera_test_DEVEL_PREFIX /home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel)
+  set(camera_test_SOURCE_PREFIX /home/hwk/camera_aruco_ros/src/camera_test)
+  set(camera_test_DEVEL_PREFIX /home/hwk/camera_aruco_ros/src/cmake-build-debug/devel)
   set(camera_test_INSTALL_PREFIX "")
   set(camera_test_PREFIX ${camera_test_DEVEL_PREFIX})
 else()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/m/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /usr/local/lib;/home/hwk/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

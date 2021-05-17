@@ -1,0 +1,8 @@
+prefix=/home/hwk/camera_aruco_ros/devel
+
+Name: camera_test
+Description: Description of camera_test
+Version: 0.0.0
+Cflags: -I/home/hwk/camera_aruco_ros/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

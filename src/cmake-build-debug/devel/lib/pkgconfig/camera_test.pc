@@ -1,8 +1,8 @@
-prefix=/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel
+prefix=/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel
 
 Name: camera_test
 Description: Description of camera_test
 Version: 0.0.0
-Cflags: -I/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/devel/include
+Cflags: -I/home/hwk/camera_aruco_ros/src/cmake-build-debug/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime

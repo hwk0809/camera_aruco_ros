@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/m/Downloads/sdx_aruco/camera_test/src/camera_test/src/camera_detect_aruco.cpp" "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/CMakeFiles/camera_detect_aruco.dir/src/camera_detect_aruco.cpp.o"
+  "/home/hwk/camera_aruco_ros/src/camera_test/src/camera_detect_aruco.cpp" "/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/CMakeFiles/camera_detect_aruco.dir/src/camera_detect_aruco.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

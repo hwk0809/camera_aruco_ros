@@ -1,4 +1,4 @@
-# Install script for directory: /home/m/Downloads/sdx_aruco/camera_test/src
+# Install script for directory: /home/hwk/camera_aruco_ros/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,11 +37,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -61,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -73,7 +68,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -86,8 +81,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/setup.bash"
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/local_setup.bash"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/setup.bash"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
@@ -101,8 +96,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/setup.sh"
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/local_setup.sh"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/setup.sh"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
@@ -116,8 +111,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/setup.zsh"
-    "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/local_setup.zsh"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/setup.zsh"
+    "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
@@ -130,13 +125,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/hwk/camera_aruco_ros/src/cmake-build-debug/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/gtest/cmake_install.cmake")
-  include("/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/camera_test/cmake_install.cmake")
+  include("/home/hwk/camera_aruco_ros/src/cmake-build-debug/gtest/cmake_install.cmake")
+  include("/home/hwk/camera_aruco_ros/src/cmake-build-debug/camera_test/cmake_install.cmake")
 
 endif()
 
@@ -148,5 +143,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/m/Downloads/sdx_aruco/camera_test/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hwk/camera_aruco_ros/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
